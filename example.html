@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Image Grid with Labels</title>
+  <style>
+
+.image_label {
+  font-size: 70%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 180px;
+  background:rgba(255,255,255,0.8);  /* Transparency */
+  padding: 5px;
+}
+.image_box {
+  background-color: #fafafa;
+  height: 200px;
+  width: 200px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eaeaea;
+  display: inline-block;
+  position: relative;
+}
+.image_thumbnail {
+  object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+  object-position: center; /* Center the image within the element */
+  height: 200px;
+  width: 200px;
+  position: absolute;
+}
+h1 {
+  color: #0080ff;
+  font-size: 120%;
+}
+  </style>
+</head>
+<body>
+  
+  <h1>Image Grid with Labels</h1>
+  
+  Images:<br><br>
+
+  <div class="image_box">
+    <a href="http://lorempixel.com/600/600/">
+    <img src="http://lorempixel.com/300/300/" class="image_thumbnail" title="Random"></a>
+    <span class="image_label" title="Small text"><a href="www.andrewnoske.com">Photo 1</a><br>square</span>
+  </div>
+  <div class="image_box">
+    <a href="http://lorempixel.com/800/600/">
+    <img src="http://lorempixel.com/400/300/" class="image_thumbnail" title="Random"></a>
+    <span class="image_label" title="Small text"><a href="www.andrewnoske.com">Photo 2</a><br>landscape</span>
+  </div>
+  <div class="image_box">
+    <a href="http://lorempixel.com/600/1000/">
+    <img src="http://lorempixel.com/300/500/" class="image_thumbnail" title="Random"></a>
+    <span class="image_label" title="Small text"><a href="www.andrewnoske.com">Photo 3</a><br>portrait</span>
+  </div>
+
+</body>

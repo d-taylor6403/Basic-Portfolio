@@ -1,7 +1,7 @@
 .main{
     background-color: white;
     width:960px;
-    height: 500px;
+    height: auto;
     margin:0 auto;
     margin-top: 120px;
     margin-bottom: 50px;
@@ -14,29 +14,41 @@ h1{
     color: #4aaaa5;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-.image1{
-    position: relative;
-    float: left;
-    margin-right: 25px;
+/*wraps all images*/
+.wrapper{
+    width:80%;
 }
 
-.image1 img{
-    width: 150px;
-    height: auto;
-}
-
-.desc1{
+/*Image grid and styling within wrapper*/
+.image_label{
+    font-size: 90%;
     position: absolute;
-    height: 50px;
-    bottom:10px;
-    background-color: #4aaaa5;
-    color:#ffffff;
-    padding-left: 20px;
-    padding-right:20px;
-}   
+    top: 155px;
+    left: 0;
+    width:180px;
+    background: #4aaaa5;  /*Transparency */
+    padding: 10px;
+}
+.image_box {
+    background-color: #fafafa;
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #ffffff;
+    display: inline-block;
+    position: relative;
+    margin-right: 40px;
+}
+  .image_thumbnail {
+    object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+    object-position: center; /* Center the image within the element */
+    height: 200px;
+    width: 200px;
+    position: absolute;
+}
 
-
+/*Sticky Footer: footer remains at the bottom of the page regardless of content*/
 .footer{
     background-color: #666666;
     color: #ffffff;
