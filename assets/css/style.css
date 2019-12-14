@@ -51,6 +51,7 @@ nav li{
     display: inline-block;
     margin-left: 70px;
     padding-top: 15px;
+    position:relative;
 }
 
 nav a{
@@ -62,4 +63,20 @@ nav a{
 
 nav a:hover{
     color:#1D403E;
+}
+
+nav a::before{
+    content: "";
+    display: block;
+    height: 5px;
+    background-color:#4aaaa5;
+
+    position: absolute;
+    top:0;
+    width: 0;
+    transition: all ease-in-out 350ms;
+}
+
+nav a:hover::before{
+    width:100%;
 }
